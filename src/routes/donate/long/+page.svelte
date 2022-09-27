@@ -1,0 +1,16 @@
+<script>
+	import details from '../../../data.json';
+	import Text from '../../../text.json';
+
+	import Link from '../../../lib/link.svelte';
+</script>
+
+<h1>{Text.Subscribe}</h1>
+
+<ul>
+	{#each Object.keys(details.long) as section}
+		<li>
+			<Link href="/donate/{section}">{section}</Link>
+		</li>
+	{/each}
+</ul>

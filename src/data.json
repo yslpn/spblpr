@@ -1,0 +1,38 @@
+{
+	"once": {
+		"sber": {
+			"details": "4274 3200 3880 6082",
+			"title": "Сбер"
+		},
+		"tinkoff": {
+			"details": "5536 9138 8427 4453",
+			"title": "Тинькофф"
+		},
+		"alfa_bank": {
+			"details": "5559 4937 1338 7935",
+			"title": "Альфа-Банк"
+		},
+		"crypto": {
+			"btc": {
+				"details": "3HKUD9wjmHiWp11Z2K6kGZdnq5TAHe6rH3",
+				"title": "Bitcoin"
+			},
+			"eth": {
+				"details": "0x89775776e4b95Cd36d743730d17786D27BcdF1b4",
+				"title": "Ethereum"
+			},
+			"zec": {
+				"details": "zs1f6tx08xnp7fsgy9hntwvkt0u30qag5v9mau05kacwvpk8ygp90lmrgw2y2dhw360h7xgu4vnzml",
+				"title": "Zcash"
+			}
+		}
+	},
+	"long": {
+		"patreon": {
+			"title": "Patreon"
+		},
+		"boosty": {
+			"title": "Boosty.to"
+		}
+	}
+}
