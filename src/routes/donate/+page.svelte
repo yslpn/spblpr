@@ -1,25 +1,19 @@
 <script>
-	import details from '../../data.json';
-	import Link from '../../lib/link.svelte'
+	import Text from '../../text.json';
+	import Link from '../../lib/link.svelte';
 </script>
 
 <svelte:head>
-	<title>Поддержите свободу в Санкт-Петербурге!</title>
-	<meta name="title" content="Поддержите свободу в Санкт-Петербурге!" />
-	<meta
-		name="description"
-		content="Пополните казну регионального отделения Либертарианской партии России."
-	/>
+	<title>{Text['DonatePage.Title']}</title>
+	<meta name="title" content={Text['DonatePage.Title']} />
+	<meta name="description" content={Text['DonatePage.Description']} />
 </svelte:head>
 
-<h1>Поддержите свободу в Санкт-Петербурге!</h1>
+<h1>{Text['DonatePage.Title']}</h1>
 
-<p>Пополните казну регионального отделения Либертарианской партии России.</p>
+<p>{Text['DonatePage.Description']}</p>
 
-<ul>
-	{#each Object.keys(details) as section}
-		<nav>
-			<Link href="/donate/{section}">{section}</Link>
-		</nav>
-	{/each}
-</ul>
+<nav>
+	<Link href="/donate/once">{Text.Once}</Link>
+	<Link href="/donate/long">{Text.Long}</Link>
+</nav>

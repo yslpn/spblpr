@@ -16,8 +16,9 @@
 		color: variables.$black;
 		text-decoration: none;
 		background-color: variables.$gold;
-		outline: 2px solid variables.$black;
 		transition: 0.3s all;
+		width: 252px;
+		margin: 20px 0;
 
 		&:hover {
 			background-color: variables.$black;

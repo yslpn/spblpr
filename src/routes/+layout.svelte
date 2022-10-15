@@ -2,13 +2,15 @@
 	import Socials from '$lib/socials.svelte';
 </script>
 
-<slot />
+<div>
+	<slot />
 
-<Socials />
+	<Socials />
+</div>
 
 <style lang="scss">
 	@use '../variables.scss';
-    
+
 	:global {
 		html {
 			font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans',
@@ -30,6 +32,16 @@
 		ul {
 			list-style: none;
 			padding: 0;
+			margin: 0;
+		}
+
+		div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			height: 100vh;
+			width: 100%;
 		}
 	}
 </style>

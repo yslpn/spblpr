@@ -5,7 +5,7 @@
 	import Link from '../../../lib/link.svelte';
 </script>
 
-<h1>{Text.Subscribe}</h1>
+<h1>{Text.Long}</h1>
 
 <ul>
 	{#each Object.keys(details.long) as section}

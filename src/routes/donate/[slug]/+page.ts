@@ -1,16 +1,16 @@
 import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageLoad} */
-export function load({ params }: { params: any }) {
+export function load({ params }: { params: { slug: string } }) {
 	if (params.slug.toLowerCase() === 'btc') {
 		return {
-			title: 'btc',
+			title: 'btc'
 		};
 	}
 
-  if (params.slug === 'sber') {
+	if (params.slug === 'sber') {
 		return {
-			title: 'sber',
+			title: 'sber'
 		};
 	}
 

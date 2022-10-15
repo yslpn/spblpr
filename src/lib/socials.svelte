@@ -1,5 +1,5 @@
 <script>
-	import text from '../text.json';
+	import Text from '../Text.json';
 
 	import telegram from './assets/telegram.svg';
 	import twitter from './assets/twitter.svg';
@@ -12,42 +12,53 @@
 <ul>
 	<li>
 		<a href="https:/t.me/spblpr">
-			<img alt={text['Socials.Telegram']} src={telegram} width="42" height="42" />
+			<img alt={Text['Socials.Telegram']} src={telegram} width="42" height="42" />
 		</a>
 	</li>
 	<li>
 		<a href="https:/twitter.com/spblpr">
-			<img alt={text['Socials.Twitter']} src={twitter} width="42" height="42" />
+			<img alt={Text['Socials.Twitter']} src={twitter} width="42" height="42" />
 		</a>
 	</li>
 	<li>
 		<a href="https:/vk.com/spblpr">
-			<img alt={text['Socials.VK']} src={vk} width="42" height="42" />
+			<img alt={Text['Socials.VK']} src={vk} width="42" height="42" />
 		</a>
 	</li>
 	<li>
 		<a href="https:/instagram.com/spblpr">
-			<img alt={text['Socials.Instagram']} src={instagram} width="42" height="42" />
+			<img alt={Text['Socials.Instagram']} src={instagram} width="42" height="42" />
 		</a>
 	</li>
 	<li>
 		<a href="https:/facebook.com/spblpr">
-			<img alt={text['Socials.Facebook']} src={facebook} width="42" height="42" />
+			<img alt={Text['Socials.Facebook']} src={facebook} width="42" height="42" />
 		</a>
 	</li>
 	<li>
 		<a href="https:/youtube.com/spblpr">
-			<img alt={text['Socials.YouTube']} src={youtube} width="42" height="42" />
+			<img alt={Text['Socials.YouTube']} src={youtube} width="42" height="42" />
 		</a>
 	</li>
 </ul>
 
-<style>
+<style lang="scss">
 	ul {
-		list-style: none;
-		padding: 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	a {
+		display: block;
+		line-height: 0;
+
+		&:hover {
+			filter: brightness(120%);
+		}
+
+		&:active {
+			filter: brightness(80%);
+		}
 	}
 </style>
