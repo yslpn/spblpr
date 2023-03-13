@@ -1,5 +1,5 @@
 <script lang="ts">
-	import copy from './assets/copy.svg';
+	import copySVG from './assets/copy.svg?raw';
 
 	export let text: string;
 
@@ -26,7 +26,7 @@
 </script>
 
 <button on:click={copyToClipboard}>
-	<img alt="test" src={copy} width="26" height="26" />
+	{@html copySVG}
 	{#if success}
 		<span>Скопировано!</span>
 	{:else if error}
@@ -40,12 +40,19 @@
 	button {
 		display: inline-flex;
 		align-items: center;
-		justify-self: center;
+		justify-content: center;
 		gap: 14px;
 		height: 42px;
+		min-width: 42px;
 		cursor: pointer;
 
 		background-color: variables.$gold;
 		border: none;
+
+		transition: 0.3s all;
+		&:hover {
+			background-color: variables.$black;
+			color: variables.$gold;
+		}
 	}
 </style>
