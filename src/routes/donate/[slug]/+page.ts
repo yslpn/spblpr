@@ -9,7 +9,6 @@ export function load({ params }: { params: { slug: keyof typeof paymentData } })
 
 	if (isValidSlug) {
 		return paymentData[params.slug];
-	} else {
-		throw error(404, Text['Error.NotFound']);
 	}
+	throw error(404, Text['Error.NotFound']);
 }
