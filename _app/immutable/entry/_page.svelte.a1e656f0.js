@@ -1,4 +1,4 @@
-import{S as V,i as F,s as G,k as $,K as I,l as d,h as l,n as _,C as A,D as y,y as q,a as v,q as L,z as B,c as M,m as k,r as z,A as S,b as r,g as b,d as j,B as J}from"../chunks/index.b61b209a.js";import{T as c}from"../chunks/text.cbe5cda7.js";import{L as N}from"../chunks/link.ccf10d90.js";const O=`<svg xmlns="http://www.w3.org/2000/svg" width="265" height="256" viewBox="0 0 265 256" fill="none">
+import{S as V,i as F,s as G,k as $,K as I,l as d,h as l,n as _,C as A,D as y,y as q,a as v,q as L,z as B,c as M,m as k,r as z,A as S,b as r,g as b,d as j,B as J}from"../chunks/index.1b7f35eb.js";import{T as c}from"../chunks/text.cbe5cda7.js";import{L as N}from"../chunks/link.4c65f21c.js";const O=`<svg xmlns="http://www.w3.org/2000/svg" width="265" height="256" viewBox="0 0 265 256" fill="none">
     <g clip-path="url(#clip0_504_2)">
         <path
             d="M52.4768 37.6085C82.9806 -6.35693 141.855 -9.63532 175.164 16.6796C173.557 16.0649 171.95 15.3624 170.314 14.8062C137.502 3.94658 107.758 9.68375 81.2276 31.7836C77.4292 34.945 74.3321 38.8673 70.826 42.409C70.3291 42.9067 69.4819 43.4335 68.8682 43.3749C65.5373 43.1115 55.72 39.5698 52.4768 37.6085Z"
