@@ -2,23 +2,24 @@
 	import { onMount } from 'svelte';
 	import QRCode from 'qrcode';
 
-	export let value: string;
+	export let text: string;
 
-	let qrCodeUrl: string;
-	let src: string;
+	let qrCode: string;
+
+	const qrOptions = {
+		width: 256,
+		height: 256
+	};
 
 	onMount(async () => {
 		try {
-			qrCodeUrl = await QRCode.toDataURL(value, { scale: 6 });
-			src = qrCodeUrl;
+			qrCode = await QRCode.toString(text, qrOptions);
 		} catch (error) {
 			console.error(error);
 		}
 	});
 </script>
 
-{#if qrCodeUrl}
-	<img {src} alt={`QR code ${value}`} />
-{:else}
-	<p>Загрузка...</p>
+{#if qrCode}
+	{@html qrCode}
 {/if}
