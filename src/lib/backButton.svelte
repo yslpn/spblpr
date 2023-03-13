@@ -18,7 +18,9 @@
 </script>
 
 {#if currentPage !== mainPage}
-	<a href="/">{Text['Back']}</a>
+	<nav>
+		<a href="/">{Text['Back']}</a>
+	</nav>
 {/if}
 
 <style>
