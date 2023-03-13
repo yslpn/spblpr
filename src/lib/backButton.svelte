@@ -6,7 +6,7 @@
 
 	import Text from '../text.json';
 
-	const mainPage = `${$page.url.origin}/${base}`;
+	const mainPage = `${$page.url.origin}${base}`;
 
 	let currentPage = get(page).url.pathname;
 
