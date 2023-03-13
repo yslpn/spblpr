@@ -11,3 +11,10 @@
 	<Link href="/donate/once">{Text['Once']}</Link>
 	<Link href="/donate/long">{Text['Long']}</Link>
 </nav>
+
+<style>
+	h1,
+	p {
+		text-align: center;
+	}
+</style>

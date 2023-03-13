@@ -6,10 +6,10 @@
 
 <div class="grid-container">
 	<div class="main-content">
-		<BackButton />
 		<slot />
 	</div>
 	<div class="footer">
+		<BackButton />
 		<Socials />
 	</div>
 </div>
@@ -55,9 +55,7 @@
 		grid-row: 1; /* расположить в первом ряду */
 		justify-self: center; /* выровнять по центру */
 		align-self: center;
-		// background-color: lightgray;
 		padding: 20px;
-
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -68,8 +66,10 @@
 		grid-row: 2; /* расположить во втором ряду */
 		justify-self: center; /* выровнять по центру */
 		align-self: end; /* выровнять по нижнему краю */
-		// background-color: gray;
-		// color: white;
 		padding: 10px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 28px;
 	}
 </style>

@@ -15,3 +15,10 @@
 	<Link href="https://lp-russia.org/join">{Text['MainPage.Join']}</Link>
 	<Link href="/donate">{Text['MainPage.Donate']}</Link>
 </nav>
+
+<style>
+	h1,
+	p {
+		text-align: center;
+	}
+</style>
