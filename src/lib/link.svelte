@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let href: string;
-	export let className: string = '';
+	export let className = '';
 	export let target: '_self' | '_blank' | '_parent' | '_top' = '_self';
 </script>
 

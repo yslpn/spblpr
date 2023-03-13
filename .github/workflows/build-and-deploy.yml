@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master  # change this to the branch you want to deploy
+      - master # change this to the branch you want to deploy
 
 jobs:
   build-and-deploy:
