@@ -1,5 +1,5 @@
 <script>
-	import Text from '../Text.json';
+	import Text from '../text.json';
 
 	import telegram from './assets/telegram.svg';
 	import twitter from './assets/twitter.svg';

@@ -1,9 +1,6 @@
 <script>
 	import Text from '../text.json';
 	import Link from '../lib/link.svelte';
-
-	export const csr = false;
-	export const prerender = false;
 </script>
 
 <svelte:head>

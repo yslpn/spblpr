@@ -1,16 +1,19 @@
-<script>
-	import details from '../../../data.json';
+<script lang="ts">
+	import { paymentData } from '../../../constants';
 	import Text from '../../../text.json';
-
 	import Link from '../../../lib/link.svelte';
+
+	const recurrentList = (Object.keys(paymentData) as Array<keyof typeof paymentData>).filter(
+		(paymentItem) => paymentData[paymentItem].isRecurrent
+	);
 </script>
 
 <h1>{Text.Long}</h1>
 
 <ul>
-	{#each Object.keys(details.long) as section}
+	{#each recurrentList as recurrentItem}
 		<li>
-			<Link href="/donate/{section}">{section}</Link>
+			<Link href={paymentData[recurrentItem].details}>{paymentData[recurrentItem].title}</Link>
 		</li>
 	{/each}
 </ul>

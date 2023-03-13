@@ -1,16 +1,23 @@
-<script>
-	import details from '../../../data.json';
+<script lang="ts">
+	import { paymentData } from '../../../constants';
 	import Text from '../../../text.json';
-	import Link from '../../../lib/link.svelte'
+	import Link from '../../../lib/link.svelte';
 
+	const onceList = (Object.keys(paymentData) as Array<keyof typeof paymentData>).filter(
+		(paymentItem) => !paymentData[paymentItem].isRecurrent && !paymentData[paymentItem].isCrypto
+	);
 </script>
 
 <h1>{Text.Once}</h1>
 
 <ul>
-	{#each Object.keys(details.once) as section}
+	{#each onceList as onceItem}
 		<li>
-			<Link href="/donate/{section}">{section}</Link>
+			<Link href="/donate/{onceItem}">{paymentData[onceItem].title}</Link>
 		</li>
 	{/each}
+
+	<li>
+		<Link href="/donate/crypto">{Text.Crypto}</Link>
+	</li>
 </ul>
