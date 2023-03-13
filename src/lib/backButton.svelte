@@ -6,13 +6,13 @@
 
 	import Text from '../text.json';
 
-	const mainPage = `/${base}`;
+	const mainPage = `${$page.url.origin}/${base}`;
 
 	let currentPage = get(page).url.pathname;
 
 	onMount(() => {
 		const unsubscribe = page.subscribe((newPage) => {
-			currentPage = newPage.url.pathname;
+			currentPage = newPage.url.href;
 		});
 
 		return unsubscribe;
