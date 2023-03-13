@@ -2,10 +2,12 @@
 	import { onMount } from 'svelte';
 	import { get } from 'svelte/store';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	import Text from '../text.json';
 
-	const mainPage = '/';
+	const mainPage = `/${base}`;
+
 	let currentPage = get(page).url.pathname;
 
 	onMount(() => {
@@ -19,7 +21,7 @@
 
 {#if currentPage !== mainPage}
 	<nav>
-		<a href="/">{Text['Back']}</a>
+		<a href={mainPage}>{Text['Back']}</a>
 	</nav>
 {/if}
 
