@@ -11,32 +11,32 @@
 
 <ul>
 	<li>
-		<a href="https:/t.me/spblpr" target="_blank" aria-label={Text['Socials.Telegram']}>
+		<a href="https://t.me/spblpr" target="_blank" aria-label={Text['Socials.Telegram']}>
 			{@html telegram}
 		</a>
 	</li>
 	<li>
-		<a href="https:/twitter.com/spblpr" target="_blank" aria-label={Text['Socials.Twitter']}>
+		<a href="https://twitter.com/spblpr" target="_blank" aria-label={Text['Socials.Twitter']}>
 			{@html twitter}
 		</a>
 	</li>
 	<li>
-		<a href="https:/vk.com/spblpr" target="_blank" aria-label={Text['Socials.VK']}>
+		<a href="https://vk.com/spblpr" target="_blank" aria-label={Text['Socials.VK']}>
 			{@html vk}
 		</a>
 	</li>
 	<li>
-		<a href="https:/instagram.com/spblpr" target="_blank" aria-label={Text['Socials.Instagram']}>
+		<a href="https://instagram.com/spblpr" target="_blank" aria-label={Text['Socials.Instagram']}>
 			{@html instagram}
 		</a>
 	</li>
 	<li>
-		<a href="https:/facebook.com/spblpr" target="_blank" aria-label={Text['Socials.Facebook']}>
+		<a href="https://facebook.com/spblpr" target="_blank" aria-label={Text['Socials.Facebook']}>
 			{@html facebook}
 		</a>
 	</li>
 	<li>
-		<a href="https:/youtube.com/spblpr" target="_blank" aria-label={Text['Socials.YouTube']}>
+		<a href="https://youtube.com/spblpr" target="_blank" aria-label={Text['Socials.YouTube']}>
 			{@html youtube}
 		</a>
 	</li>
