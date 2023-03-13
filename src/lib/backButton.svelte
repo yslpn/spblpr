@@ -23,8 +23,9 @@
 	</nav>
 {/if}
 
-<style>
+<style lang="scss">
+	@use '../variables.scss';
 	a {
-		color: #707070;
+		color: variables.$text;
 	}
 </style>
