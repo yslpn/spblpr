@@ -19,6 +19,10 @@
 </script>
 
 <svelte:head>
+	<title>{Text['DonatePage.Title']}</title>
+	<meta name="title" content={Text['DonatePage.Title']} />
+	<meta name="description" content={Text['DonatePage.Description']} />
+
 	<meta property="og:url" content={currentHref} />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content={Text['DonatePage.Title']} />

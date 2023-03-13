@@ -1,6 +1,6 @@
 <script>
-	import OpenGraph from '$lib/openGraph.svelte';
+	import HeadDonate from '$lib/headDonatePage.svelte';
 </script>
 
-<OpenGraph />
+<HeadDonate />
 <slot />
