@@ -13,11 +13,11 @@
 <ul>
 	{#each onceList as onceItem}
 		<li>
-			<Link href="./donate/{onceItem}">{paymentData[onceItem].title}</Link>
+			<Link href="./{onceItem}">{paymentData[onceItem].title}</Link>
 		</li>
 	{/each}
 
 	<li>
-		<Link href="/donate/crypto">{Text['Crypto']}</Link>
+		<Link href="./crypto">{Text['Crypto']}</Link>
 	</li>
 </ul>
