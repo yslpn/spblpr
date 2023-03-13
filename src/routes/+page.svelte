@@ -10,8 +10,7 @@
 <HeadMainPage />
 
 <h1>{Text['MainPage.Title']}</h1>
-<!-- <Logo /> -->
-{@html logo}
+<p>{@html logo}</p>
 <p>{Text['MainPage.Description']}</p>
 
 <nav>
