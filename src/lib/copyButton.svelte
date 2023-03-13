@@ -36,20 +36,19 @@
 
 	button {
 		display: inline-flex;
+		gap: 14px;
 		align-items: center;
 		justify-content: center;
-		gap: 14px;
-		height: 42px;
 		min-width: 42px;
+		height: 42px;
 		cursor: pointer;
-
 		background-color: variables.$gold;
 		border: none;
-
 		transition: 0.3s all;
+
 		&:hover {
-			background-color: variables.$black;
 			color: variables.$gold;
+			background-color: variables.$black;
 		}
 	}
 </style>

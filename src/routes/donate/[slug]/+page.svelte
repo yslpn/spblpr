@@ -21,11 +21,12 @@
 <style>
 	p {
 		display: flex;
-		justify-content: center;
-		align-items: center;
 		flex-wrap: wrap;
 		gap: 14px;
+		align-items: center;
+		justify-content: center;
 	}
+
 	span {
 		font-family: monospace;
 		font-size: 16px;

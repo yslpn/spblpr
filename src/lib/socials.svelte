@@ -45,15 +45,15 @@
 <style lang="scss">
 	ul {
 		display: flex;
-		justify-content: center;
 		align-items: center;
+		justify-content: center;
 	}
 
 	a {
 		display: block;
-		line-height: 0;
 		width: 42px;
 		height: 42px;
+		line-height: 0;
 
 		&:hover {
 			filter: brightness(120%);

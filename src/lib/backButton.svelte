@@ -27,6 +27,7 @@
 
 <style lang="scss">
 	@use '../variables.scss';
+
 	a {
 		color: variables.$text;
 	}

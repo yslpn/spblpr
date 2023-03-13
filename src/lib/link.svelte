@@ -13,19 +13,19 @@
 
 	a {
 		display: flex;
-		justify-content: center;
 		align-items: center;
+		justify-content: center;
+		width: 252px;
 		height: 42px;
+		margin: 20px 0;
 		color: variables.$black;
 		text-decoration: none;
 		background-color: variables.$gold;
 		transition: 0.3s all;
-		width: 252px;
-		margin: 20px 0;
 
 		&:hover {
-			background-color: variables.$black;
 			color: variables.$gold;
+			background-color: variables.$black;
 		}
 	}
 </style>

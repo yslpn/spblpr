@@ -19,9 +19,9 @@
 
 	:global {
 		html {
+			box-sizing: border-box;
 			font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans',
 				'Liberation Sans', Arial, sans-serif;
-			box-sizing: border-box;
 		}
 
 		*,
@@ -31,16 +31,16 @@
 		}
 
 		body {
-			background-color: variables.$black;
-			color: variables.$text;
 			margin-top: 0;
 			margin-bottom: 0;
+			color: variables.$text;
+			background-color: variables.$black;
 		}
 
 		ul {
-			list-style: none;
 			padding: 0;
 			margin: 0;
+			list-style: none;
 		}
 	}
 
@@ -53,24 +53,24 @@
 	}
 
 	.main-content {
-		grid-row: 1;
-		justify-self: center;
-		align-self: center;
-		padding: 20px;
 		display: flex;
-		justify-content: center;
-		align-items: center;
 		flex-direction: column;
+		grid-row: 1;
+		align-items: center;
+		align-self: center;
+		justify-content: center;
+		justify-self: center;
+		padding: 20px;
 	}
 
 	.footer {
-		grid-row: 2;
-		justify-self: center;
-		align-self: end;
-		padding: 10px;
 		display: flex;
-		align-items: center;
 		flex-direction: column;
+		grid-row: 2;
 		gap: 28px;
+		align-items: center;
+		align-self: end;
+		justify-self: center;
+		padding: 10px;
 	}
 </style>
