@@ -11,7 +11,7 @@ export const paymentData = {
 		isRecurrent: false,
 		isCrypto: false
 	},
-	alfaBank: {
+	alfabank: {
 		details: '5559 4937 1338 7935',
 		title: 'Альфа-Банк',
 		isRecurrent: false,
@@ -37,7 +37,7 @@ export const paymentData = {
 	},
 	boosty: {
 		details: 'https://boosty.to/spblpr',
-		title: 'Boosty.to',
+		title: 'Boosty',
 		isRecurrent: true,
 		isCrypto: false
 	}
