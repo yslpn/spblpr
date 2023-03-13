@@ -14,7 +14,7 @@
 
 {#if data.isCrypto}
 	<p>
-		<QrCode value={data.details} />
+		<QrCode text={data.details} />
 	</p>
 {/if}
 
