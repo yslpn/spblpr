@@ -1,36 +1,33 @@
 <script lang="ts">
-	import copySVG from './assets/copy.svg?raw';
+	import Text from '../text.json';
+
+	import copySVG from './assets/icons/copy.svg?raw';
 
 	export let text: string;
 
 	let success = false;
-	let error = false;
 
 	function copyToClipboard() {
 		navigator.clipboard
 			.writeText(text)
 			.then(() => {
 				success = true;
-				error = false;
 
 				setTimeout(() => {
 					success = false;
-					error = false;
 				}, 1500);
 			})
-			.catch(() => {
+			.catch((error: unknown) => {
 				success = false;
-				error = true;
+				console.error(error);
 			});
 	}
 </script>
 
-<button on:click={copyToClipboard}>
+<button on:click={copyToClipboard} aria-label={Text['Copy']}>
 	{@html copySVG}
 	{#if success}
-		<span>Скопировано!</span>
-	{:else if error}
-		<span>Ошибка!</span>
+		<span>{Text['Copy.Success}</span>
 	{/if}
 </button>
 

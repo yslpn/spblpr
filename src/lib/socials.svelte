@@ -1,12 +1,12 @@
 <script>
 	import Text from '../text.json';
 
-	import telegram from './assets/telegram.svg?raw';
-	import twitter from './assets/twitter.svg?raw';
-	import vk from './assets/vk.svg?raw';
-	import instagram from './assets/instagram.svg?raw';
-	import facebook from './assets/facebook.svg?raw';
-	import youtube from './assets/youtube.svg?raw';
+	import telegram from './assets/icons/telegram.svg?raw';
+	import twitter from './assets/icons/twitter.svg?raw';
+	import vk from './assets/icons/vk.svg?raw';
+	import instagram from './assets/icons/instagram.svg?raw';
+	import facebook from './assets/icons/facebook.svg?raw';
+	import youtube from './assets/icons/youtube.svg?raw';
 </script>
 
 <ul>

@@ -18,5 +18,10 @@
 	"Socials.Facebook": "Facebook ЛПР Петербург",
 	"Socials.YouTube": "YouTube ЛПР Петербург",
 
-	"Error.404": "Страница не найдена"
+	"Error.NotFound": "Страница не найдена",
+
+	"Copy": "Скопировать",
+	"Copy.Success": "Скопировано!",
+
+	"Back": "Вернуться на главную"
 }
