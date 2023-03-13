@@ -48,7 +48,7 @@
 		display: grid;
 		grid-template-rows: 1fr auto; /* основной контент и футер */
 		grid-template-columns: 1fr; /* один столбец */
-		height: 100vh; /* высота на весь экран */
+		height: 100dvh;
 	}
 
 	.main-content {
