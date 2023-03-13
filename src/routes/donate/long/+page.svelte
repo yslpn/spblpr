@@ -19,3 +19,9 @@
 		</li>
 	{/each}
 </ul>
+
+<style>
+	h1 {
+		text-align: center;
+	}
+</style>

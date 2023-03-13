@@ -21,3 +21,9 @@
 		<Link href="./crypto">{Text['Crypto']}</Link>
 	</li>
 </ul>
+
+<style>
+	h1 {
+		text-align: center;
+	}
+</style>
