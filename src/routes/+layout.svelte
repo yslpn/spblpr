@@ -46,14 +46,15 @@
 
 	.grid-container {
 		display: grid;
-		grid-template-rows: 1fr auto; /* основной контент и футер */
-		grid-template-columns: 1fr; /* один столбец */
+		grid-template-rows: 1fr auto;
+		grid-template-columns: 1fr;
+		height: 100vh; /* fallback */
 		height: 100dvh;
 	}
 
 	.main-content {
-		grid-row: 1; /* расположить в первом ряду */
-		justify-self: center; /* выровнять по центру */
+		grid-row: 1;
+		justify-self: center;
 		align-self: center;
 		padding: 20px;
 		display: flex;
@@ -63,9 +64,9 @@
 	}
 
 	.footer {
-		grid-row: 2; /* расположить во втором ряду */
-		justify-self: center; /* выровнять по центру */
-		align-self: end; /* выровнять по нижнему краю */
+		grid-row: 2;
+		justify-self: center;
+		align-self: end;
 		padding: 10px;
 		display: flex;
 		align-items: center;
