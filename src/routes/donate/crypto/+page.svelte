@@ -8,7 +8,7 @@
 	);
 </script>
 
-<h1>{Text.Crypto}</h1>
+<h1>{Text['Crypto']}</h1>
 
 <ul>
 	{#each cryptoList as cryptoItem}

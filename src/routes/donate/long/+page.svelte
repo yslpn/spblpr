@@ -8,7 +8,7 @@
 	);
 </script>
 
-<h1>{Text.Long}</h1>
+<h1>{Text['Long']}</h1>
 
 <ul>
 	{#each recurrentList as recurrentItem}

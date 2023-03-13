@@ -1,28 +1,12 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { get } from 'svelte/store';
-	import { page } from '$app/stores';
 	import Socials from '$lib/socials.svelte';
 
-	import Text from '../text.json';
-
-	const mainPage = '/';
-	let currentPage = get(page).url.pathname;
-
-	onMount(() => {
-		const unsubscribe = page.subscribe((newPage) => {
-			currentPage = newPage.url.pathname;
-		});
-
-		return unsubscribe;
-	});
+	import BackButton from '$lib/backButton.svelte';
 </script>
 
 <div class="grid-container">
 	<div class="main-content">
-		{#if currentPage !== mainPage}
-			<a href="/" class="back-link">{Text['Back']}</a>
-		{/if}
+		<BackButton />
 		<slot />
 	</div>
 	<div class="footer">
@@ -58,10 +42,6 @@
 			padding: 0;
 			margin: 0;
 		}
-	}
-
-	.back-link {
-		color: #707070;
 	}
 
 	.grid-container {

@@ -27,7 +27,7 @@
 <button on:click={copyToClipboard} aria-label={Text['Copy']}>
 	{@html copySVG}
 	{#if success}
-		<span>{Text['Copy.Success}</span>
+		<span>{Text['Copy.Success']}</span>
 	{/if}
 </button>
 

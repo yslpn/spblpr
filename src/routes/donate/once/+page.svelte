@@ -8,7 +8,7 @@
 	);
 </script>
 
-<h1>{Text.Once}</h1>
+<h1>{Text['Once']}</h1>
 
 <ul>
 	{#each onceList as onceItem}
@@ -18,6 +18,6 @@
 	{/each}
 
 	<li>
-		<Link href="/donate/crypto">{Text.Crypto}</Link>
+		<Link href="/donate/crypto">{Text['Crypto']}</Link>
 	</li>
 </ul>
