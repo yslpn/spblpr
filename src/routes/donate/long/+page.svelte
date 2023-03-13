@@ -13,7 +13,9 @@
 <ul>
 	{#each recurrentList as recurrentItem}
 		<li>
-			<Link href={paymentData[recurrentItem].details}>{paymentData[recurrentItem].title}</Link>
+			<Link href={paymentData[recurrentItem].details} target="_blank">
+				{paymentData[recurrentItem].title}
+			</Link>
 		</li>
 	{/each}
 </ul>

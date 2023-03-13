@@ -11,32 +11,32 @@
 
 <ul>
 	<li>
-		<a href="https:/t.me/spblpr">
+		<a href="https:/t.me/spblpr" target="_blank">
 			<img alt={Text['Socials.Telegram']} src={telegram} width="42" height="42" />
 		</a>
 	</li>
 	<li>
-		<a href="https:/twitter.com/spblpr">
+		<a href="https:/twitter.com/spblpr" target="_blank">
 			<img alt={Text['Socials.Twitter']} src={twitter} width="42" height="42" />
 		</a>
 	</li>
 	<li>
-		<a href="https:/vk.com/spblpr">
+		<a href="https:/vk.com/spblpr" target="_blank">
 			<img alt={Text['Socials.VK']} src={vk} width="42" height="42" />
 		</a>
 	</li>
 	<li>
-		<a href="https:/instagram.com/spblpr">
+		<a href="https:/instagram.com/spblpr" target="_blank">
 			<img alt={Text['Socials.Instagram']} src={instagram} width="42" height="42" />
 		</a>
 	</li>
 	<li>
-		<a href="https:/facebook.com/spblpr">
+		<a href="https:/facebook.com/spblpr" target="_blank">
 			<img alt={Text['Socials.Facebook']} src={facebook} width="42" height="42" />
 		</a>
 	</li>
 	<li>
-		<a href="https:/youtube.com/spblpr">
+		<a href="https:/youtube.com/spblpr" target="_blank">
 			<img alt={Text['Socials.YouTube']} src={youtube} width="42" height="42" />
 		</a>
 	</li>

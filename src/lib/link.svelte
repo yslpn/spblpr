@@ -1,9 +1,12 @@
 <script lang="ts">
 	export let href: string;
 	export let className: string = '';
+	export let target: '_self' | '_blank' | '_parent' | '_top' = '_self';
 </script>
 
-<a {href} class={className}> <slot /></a>
+<a {href} class={className} {target}>
+	<slot />
+</a>
 
 <style lang="scss">
 	@use '../variables.scss';
