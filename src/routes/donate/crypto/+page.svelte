@@ -13,7 +13,7 @@
 <ul>
 	{#each cryptoList as cryptoItem}
 		<li>
-			<Link href="/donate/{cryptoItem}">{paymentData[cryptoItem].title}</Link>
+			<Link href="./donate/{cryptoItem}">{paymentData[cryptoItem].title}</Link>
 		</li>
 	{/each}
 </ul>

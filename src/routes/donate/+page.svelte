@@ -8,8 +8,8 @@
 <p>{Text['DonatePage.Description']}</p>
 
 <nav>
-	<Link href="/donate/once">{Text['Once']}</Link>
-	<Link href="/donate/long">{Text['Long']}</Link>
+	<Link href="./donate/once">{Text['Once']}</Link>
+	<Link href="./donate/long">{Text['Long']}</Link>
 </nav>
 
 <style>
