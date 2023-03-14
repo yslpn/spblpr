@@ -15,7 +15,7 @@
 	},
 	"lint-staged": {
 		"src/**/*.{svelte}": [
-			"stylelint --config .stylelintrc --quiet --fix",
+			"stylelint --config .stylelintrc.json --quiet --fix",
 			"eslint --fix",
 			"prettier --write --cache"
 		],

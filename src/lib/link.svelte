@@ -2,9 +2,10 @@
 	export let href: string;
 	export let className = '';
 	export let target: '_self' | '_blank' | '_parent' | '_top' = '_self';
+	export let rel = '';
 </script>
 
-<a {href} class={className} {target}>
+<a {href} class={className} {target} {rel}>
 	<slot />
 </a>
 
