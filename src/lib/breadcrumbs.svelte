@@ -4,8 +4,10 @@
 
 	import Text from '../text.json';
 	import { paymentData } from '../constants';
+	import { getCryptoList } from '../helpers/main';
 
 	$: currentPage = $page.url.href;
+	$: slug = $page.params.slug;
 
 	const mainPage = `${$page.url.origin}${base}/`;
 	const donatePage = `${$page.url.origin}${base}/donate`;
@@ -13,15 +15,11 @@
 	const longPage = `${$page.url.origin}${base}/donate/long`;
 	const cryptoPage = `${$page.url.origin}${base}/donate/crypto`;
 
-	const cryptoList = (Object.keys(paymentData) as Array<keyof typeof paymentData>).filter(
-		(paymentItem) => paymentData[paymentItem].isCrypto
-	);
-
 	const isCryptoPageItem = (): boolean => {
-		const payment = currentPage.split('/').at(-1);
+		const cryptoList = getCryptoList(paymentData);
 
-		if (payment) {
-			return cryptoList.includes(payment as keyof typeof paymentData);
+		if (slug) {
+			return cryptoList.includes(slug as keyof typeof paymentData);
 		} else {
 			return false;
 		}
