@@ -13,9 +13,9 @@
 </p>
 
 {#if data.isCrypto}
-	<p>
+	<div>
 		<QrCode text={data.details} />
-	</p>
+	</div>
 {/if}
 
 <style>
@@ -31,5 +31,11 @@
 		font-family: monospace;
 		font-size: 16px;
 		word-break: break-all;
+	}
+
+	div {
+		width: 256px;
+		height: 256px;
+		background-color: white;
 	}
 </style>
