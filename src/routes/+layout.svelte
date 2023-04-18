@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Socials from '$lib/socials.svelte';
-
-	import BackButton from '$lib/backButton.svelte';
+	import Breadcrumbs from '$lib/breadcrumbs.svelte';
 </script>
 
 <div class="grid-container">
@@ -9,7 +8,7 @@
 		<slot />
 	</div>
 	<div class="footer">
-		<BackButton />
+		<Breadcrumbs />
 		<Socials />
 	</div>
 </div>
@@ -71,6 +70,6 @@
 		align-items: center;
 		align-self: end;
 		justify-self: center;
-		padding: 10px;
+		padding: 20px;
 	}
 </style>

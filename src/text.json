@@ -23,5 +23,8 @@
 	"Copy": "Скопировать",
 	"Copy.Success": "Скопировано!",
 
-	"Back": "Вернуться на главную"
+	"Breadcrumbs.Main": "Главная",
+	"Breadcrumbs.Donate": "Пожертвовать",
+	"Breadcrumbs.DonateOnce": "Разовое пожертвование",
+	"Breadcrumbs.DonateCrypto": "Криптовалюты"
 }
