@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 	import QRCode from 'qrcode';
 
 	export let text: string;
@@ -21,5 +22,7 @@
 </script>
 
 {#if qrCode}
-	{@html qrCode}
+	<div in:fade>
+		{@html qrCode}
+	</div>
 {/if}
