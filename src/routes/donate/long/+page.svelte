@@ -2,11 +2,16 @@
 	import { paymentData } from '../../../constants';
 	import Text from '../../../text.json';
 	import Link from '../../../lib/link.svelte';
+	import { getRecurrentList } from '../../../helpers/main';
 
-	const recurrentList = (Object.keys(paymentData) as Array<keyof typeof paymentData>).filter(
-		(paymentItem) => paymentData[paymentItem].isRecurrent
-	);
+	const recurrentList = getRecurrentList(paymentData);
 </script>
+
+<svelte:head>
+	{#each recurrentList as recurrentItem}
+		<link rel="preconnect" href={paymentData[recurrentItem].details} />
+	{/each}
+</svelte:head>
 
 <h1>{Text['Long']}</h1>
 
