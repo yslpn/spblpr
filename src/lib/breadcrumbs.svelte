@@ -50,6 +50,11 @@
 
 	a {
 		color: variables.$text;
+		transition: 0.3s all;
+
+		&:hover {
+			color: variables.$gold;
+		}
 	}
 
 	nav {
