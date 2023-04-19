@@ -5,7 +5,7 @@
 
 	$: currentHref = $page.url.href;
 
-	const preview = `${base}donate-preview-link.png`;
+	const preview = `${base}/donate-preview-link.png`;
 	const domain = 'spblpr.org';
 </script>
 
