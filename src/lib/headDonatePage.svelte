@@ -1,21 +1,12 @@
 <script>
 	import Text from '../text.json';
-
-	import preview from '../lib/assets/donate-preview-link.png';
-	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
-	import { get } from 'svelte/store';
+	import { base } from '$app/paths';
 
+	$: currentHref = $page.url.href;
+
+	const preview = `${base}donate-preview-link.png`;
 	const domain = 'spblpr.org';
-	let currentHref = get(page).url.pathname;
-
-	onMount(() => {
-		const unsubscribe = page.subscribe((newPage) => {
-			currentHref = newPage.url.href;
-		});
-
-		return unsubscribe;
-	});
 </script>
 
 <svelte:head>
