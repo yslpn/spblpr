@@ -5,8 +5,8 @@
 
 	$: currentHref = $page.url.href;
 
-	const preview = `${base}/donate-preview-link.png`;
 	const domain = 'spblpr.org';
+	const preview = `https://${domain}/donate-preview-link.png`;
 </script>
 
 <svelte:head>
