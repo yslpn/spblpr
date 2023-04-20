@@ -1,7 +1,7 @@
 export const paymentData = {
 	sber: {
 		details: '4274 3200 3880 6082',
-		title: 'Сбер',
+		title: 'Сбербанк',
 		isRecurrent: false,
 		isCrypto: false
 	},
