@@ -1,28 +1,29 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
 	import QRCode from 'qrcode';
 
 	export let text: string;
-
-	let qrCode: string;
 
 	const qrOptions = {
 		width: 256,
 		height: 256
 	};
 
-	onMount(async () => {
-		try {
-			qrCode = await QRCode.toString(text, qrOptions);
-		} catch (error) {
-			console.error(error);
-		}
-	});
+	const qrCode = QRCode.toString(text, qrOptions);
 </script>
 
-{#if qrCode}
-	<div in:fade>
-		{@html qrCode}
+{#await qrCode}
+	<div />
+{:then result}
+	<div>
+		{@html result}
 	</div>
-{/if}
+{:catch error}
+	<p>Ошибка: {error.message}</p>
+{/await}
+
+<style>
+	div {
+		width: 256px;
+		height: 256px;
+	}
+</style>
