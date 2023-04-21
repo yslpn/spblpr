@@ -1,10 +1,12 @@
 <script>
 	import Text from '../../text.json';
 	import Link from '../../lib/link.svelte';
+
+	import donateLogo from '../../lib/assets/donate-logo.svg?raw';
 </script>
 
 <h1>{Text['DonatePage.Title']}</h1>
-
+<p>{@html donateLogo}</p>
 <p>{Text['DonatePage.Description']}</p>
 
 <nav>
