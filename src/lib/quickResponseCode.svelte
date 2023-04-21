@@ -1,5 +1,6 @@
 <script lang="ts">
 	import QRCode from 'qrcode';
+	import { fade } from 'svelte/transition';
 
 	export let text: string;
 
@@ -14,7 +15,7 @@
 {#await qrCode}
 	<div />
 {:then result}
-	<div>
+	<div in:fade>
 		{@html result}
 	</div>
 {:catch error}
