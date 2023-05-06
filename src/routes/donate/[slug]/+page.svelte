@@ -1,8 +1,6 @@
 <script>
 	import CopyButton from '../../../lib/copyButton.svelte';
-	import QrCode from '../../../lib/quickResponseCode.svelte';
 
-	/** @type {import('./$types').PageData} */
 	export let data;
 </script>
 
@@ -13,10 +11,15 @@
 </p>
 
 {#if data.isCrypto}
-	<QrCode text={data.details} />
+	<div>{@html data.qr}</div>
 {/if}
 
 <style>
+	div {
+		width: 256px;
+		height: 256px;
+	}
+
 	p {
 		display: flex;
 		flex-wrap: wrap;
