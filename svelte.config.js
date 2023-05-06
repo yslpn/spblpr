@@ -16,7 +16,13 @@ const config = {
 			fallback: null,
 			precompress: false,
 			strict: true
-		})
+		}),
+		paths: {
+			base: process.env.BASE_PATH
+		},
+		prerender: {
+			origin: process.env.ORIGIN_PATH
+		}
 	}
 };
 
