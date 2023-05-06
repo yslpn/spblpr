@@ -28,5 +28,13 @@
 			color: variables.$gold;
 			background-color: variables.$black;
 		}
+
+		@media (hover: none) {
+			/* Стили для устройств без ховера */
+			&:hover {
+				color: variables.$black;
+				background-color: variables.$gold;
+			}
+		}
 	}
 </style>
