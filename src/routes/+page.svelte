@@ -14,7 +14,7 @@
 <p>{Text['MainPage.Description']}</p>
 
 <nav>
-	<Link href={'https://lp-russia.org'} target="_blank">
+	<Link href={'https://lp-russia.org/join'} target="_blank">
 		{Text['MainPage.Join']}
 	</Link>
 	<Link href="./donate">{Text['MainPage.Donate']}</Link>
