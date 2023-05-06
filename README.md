@@ -15,6 +15,8 @@ npm run dev -- --open
 
 ## Building
 
+This application relies on two environment variables: `ORIGIN_PATH` and `BASE_PATH`.
+
 To create a production version of your app:
 
 ```bash
