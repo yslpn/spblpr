@@ -2,7 +2,7 @@
 	import Text from '../text.json';
 	import Link from '../lib/link.svelte';
 
-	import HeadMain from '$lib/headDonatePage.svelte';
+	import HeadMain from '$lib/headMainPage.svelte';
 
 	import lprLogo from '../lib/assets/lpr-logo.svg?raw';
 </script>
