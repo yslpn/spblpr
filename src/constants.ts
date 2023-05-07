@@ -31,7 +31,7 @@ export const paymentData = {
 	},
 	btc: {
 		details: 'bc1q00fygpsvgxkxw3f04twwrjmlgh2amc6pm6mpjj',
-		title: 'Bitcoin',
+		title: 'Bitcoin ❤️',
 		isRecurrent: false,
 		isCrypto: true
 	},
