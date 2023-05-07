@@ -1,6 +1,6 @@
 export const paymentData = {
 	sber: {
-		details: '4274 3200 3880 6082',
+		details: '2202 2062 8535 5959',
 		title: 'Сбербанк',
 		isRecurrent: false,
 		isCrypto: false
@@ -18,7 +18,7 @@ export const paymentData = {
 		isCrypto: false
 	},
 	btc: {
-		details: '3HKUD9wjmHiWp11Z2K6kGZdnq5TAHe6rH3',
+		details: 'bc1q00fygpsvgxkxw3f04twwrjmlgh2amc6pm6mpjj',
 		title: 'Bitcoin',
 		isRecurrent: false,
 		isCrypto: true
@@ -32,6 +32,30 @@ export const paymentData = {
 	zec: {
 		details: 't1P1K26BaEnDMX5RbrPURE4Ek4hyaPgRe35',
 		title: 'Zcash',
+		isRecurrent: false,
+		isCrypto: true
+	},
+	dash: {
+		details: 'XdFA8Xy7DRJ5Cd5tHrUzjMrnuPD5EqF7hs',
+		title: 'Dash',
+		isRecurrent: false,
+		isCrypto: true
+	},
+	usdt: {
+		details: 'TRkd7CLStZgtAcKiQywDFkX34m6y7jDMag',
+		title: 'usdt-trc20',
+		isRecurrent: false,
+		isCrypto: true
+	},
+	ltc: {
+		details: 't1P1K26BaEnDMX5RbrPURE4Ek4hyaPgRe35',
+		title: 'Litecoin',
+		isRecurrent: false,
+		isCrypto: true
+	},
+	usdc: {
+		details: 'TRkd7CLStZgtAcKiQywDFkX34m6y7jDMag',
+		title: 'usdc-trc20',
 		isRecurrent: false,
 		isCrypto: true
 	},
