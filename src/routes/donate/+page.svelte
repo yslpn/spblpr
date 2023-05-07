@@ -1,6 +1,6 @@
 <script>
 	import Link from '$lib/link.svelte';
-	import donateLogo from '$lib/assets/donate-logo.svg?raw';
+	import donateLogo from '../../assets/donate-logo.svg?raw';
 	import Text from '../../text.json';
 </script>
 

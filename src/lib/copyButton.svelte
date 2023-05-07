@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Text from '../text.json';
 
-	import copySVG from './assets/icons/copy.svg?raw';
+	import copySVG from '../assets/icons/copy.svg?raw';
 
 	export let text: string;
 

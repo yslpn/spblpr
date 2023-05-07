@@ -1,8 +1,8 @@
 <script>
 	import Link from '$lib/link.svelte';
 	import Meta from '$lib/meta.svelte';
-	import lprLogo from '$lib/assets/lpr-logo.svg?raw';
 
+	import lprLogo from '../assets/lpr-logo.svg?raw';
 	import Text from '../text.json';
 
 	const lpRussiaJoin = 'https://lp-russia.org';
