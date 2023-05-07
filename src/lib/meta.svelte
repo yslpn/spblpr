@@ -2,22 +2,24 @@
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
 
-	import Text from '../text.json';
+	export let title = '';
+	export let description = '';
+	export let previewImage = '';
 
 	$: currentHref = $page.url.href;
 
-	const preview = `${$page.url.origin}${base}/og-donate.png`;
+	const preview = `${$page.url.origin}${base}/${previewImage}`;
 </script>
 
 <svelte:head>
-	<title>{Text['DonatePage.Title']}</title>
-	<meta name="title" content={Text['DonatePage.Title']} />
-	<meta name="description" content={Text['DonatePage.Description']} />
+	<title>{title}</title>
+	<meta name="title" content={title} />
+	<meta name="description" content={description} />
 
 	<meta property="og:url" content={currentHref} />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content={Text['DonatePage.Title']} />
-	<meta property="og:description" content={Text['DonatePage.Description']} />
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
 	<meta property="og:image" content={preview} />
 	<meta property="og:image:secure_url" content={preview} />
 	<meta property="og:image:type" content="image/png" />
@@ -29,7 +31,8 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta property="twitter:domain" content={$page.url.hostname} />
 	<meta property="twitter:url" content={currentHref} />
-	<meta name="twitter:title" content={Text['DonatePage.Title']} />
-	<meta name="twitter:description" content={Text['DonatePage.Description']} />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content={preview} />
+	<slot />
 </svelte:head>

@@ -1,6 +1,12 @@
 <script>
-	import HeadDonate from '$lib/headDonatePage.svelte';
+	import Meta from '$lib/meta.svelte';
+
+	import Text from '../../text.json';
 </script>
 
-<HeadDonate />
+<Meta
+	title={Text['DonatePage.Title']}
+	description={Text['DonatePage.Description']}
+	previewImage={'og-donate.png'}
+/>
 <slot />

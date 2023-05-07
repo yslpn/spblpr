@@ -1,5 +1,5 @@
 <script>
-	import CopyButton from '../../../lib/copyButton.svelte';
+	import CopyButton from '$lib/copyButton.svelte';
 
 	export let data;
 </script>
