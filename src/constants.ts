@@ -23,8 +23,14 @@ export const paymentData = {
 		isRecurrent: false,
 		isCrypto: true
 	},
+	eth: {
+		details: '0x78305e1A7E0B62E3bE16351f4F4E6dD726F2a90f',
+		title: 'Ethereum',
+		isRecurrent: false,
+		isCrypto: true
+	},
 	zec: {
-		details: 'zs1f6tx08xnp7fsgy9hntwvkt0u30qag5v9mau05kacwvpk8ygp90lmrgw2y2dhw360h7xgu4vnzml',
+		details: 't1P1K26BaEnDMX5RbrPURE4Ek4hyaPgRe35',
 		title: 'Zcash',
 		isRecurrent: false,
 		isCrypto: true
