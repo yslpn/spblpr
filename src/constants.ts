@@ -17,6 +17,18 @@ export const paymentData = {
 		isRecurrent: false,
 		isCrypto: false
 	},
+	usdc: {
+		details: 'TRkd7CLStZgtAcKiQywDFkX34m6y7jDMag',
+		title: 'USDC (TRC20)',
+		isRecurrent: false,
+		isCrypto: true
+	},
+	usdt: {
+		details: 'TRkd7CLStZgtAcKiQywDFkX34m6y7jDMag',
+		title: 'USDT (TRC20)',
+		isRecurrent: false,
+		isCrypto: true
+	},
 	btc: {
 		details: 'bc1q00fygpsvgxkxw3f04twwrjmlgh2amc6pm6mpjj',
 		title: 'Bitcoin',
@@ -29,6 +41,12 @@ export const paymentData = {
 		isRecurrent: false,
 		isCrypto: true
 	},
+	ltc: {
+		details: 't1P1K26BaEnDMX5RbrPURE4Ek4hyaPgRe35',
+		title: 'Litecoin',
+		isRecurrent: false,
+		isCrypto: true
+	},
 	zec: {
 		details: 't1P1K26BaEnDMX5RbrPURE4Ek4hyaPgRe35',
 		title: 'Zcash',
@@ -38,24 +56,6 @@ export const paymentData = {
 	dash: {
 		details: 'XdFA8Xy7DRJ5Cd5tHrUzjMrnuPD5EqF7hs',
 		title: 'Dash',
-		isRecurrent: false,
-		isCrypto: true
-	},
-	usdt: {
-		details: 'TRkd7CLStZgtAcKiQywDFkX34m6y7jDMag',
-		title: 'usdt-trc20',
-		isRecurrent: false,
-		isCrypto: true
-	},
-	ltc: {
-		details: 't1P1K26BaEnDMX5RbrPURE4Ek4hyaPgRe35',
-		title: 'Litecoin',
-		isRecurrent: false,
-		isCrypto: true
-	},
-	usdc: {
-		details: 'TRkd7CLStZgtAcKiQywDFkX34m6y7jDMag',
-		title: 'usdc-trc20',
 		isRecurrent: false,
 		isCrypto: true
 	},
