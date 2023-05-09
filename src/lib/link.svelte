@@ -18,7 +18,6 @@
 		justify-content: center;
 		width: 252px;
 		height: 42px;
-		margin: 20px 0;
 		color: variables.$black;
 		text-decoration: none;
 		background-color: variables.$gold;
