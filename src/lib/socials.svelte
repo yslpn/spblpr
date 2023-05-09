@@ -4,8 +4,8 @@
 	import telegram from '../assets/icons/telegram.svg?raw';
 	import twitter from '../assets/icons/twitter.svg?raw';
 	import vk from '../assets/icons/vk.svg?raw';
-	import instagram from '../assets/icons/instagram.svg?raw';
-	import facebook from '../assets/icons/facebook.svg?raw';
+	// import instagram from '../assets/icons/instagram.svg?raw';
+	// import facebook from '../assets/icons/facebook.svg?raw';
 	import youtube from '../assets/icons/youtube.svg?raw';
 </script>
 
@@ -25,7 +25,7 @@
 			{@html vk}
 		</a>
 	</li>
-	<li>
+	<!-- <li>
 		<a href="https://instagram.com/spblpr" target="_blank" aria-label={Text['Socials.Instagram']}>
 			{@html instagram}
 		</a>
@@ -34,7 +34,7 @@
 		<a href="https://facebook.com/spblpr" target="_blank" aria-label={Text['Socials.Facebook']}>
 			{@html facebook}
 		</a>
-	</li>
+	</li> -->
 	<li>
 		<a href="https://youtube.com/spblpr" target="_blank" aria-label={Text['Socials.YouTube']}>
 			{@html youtube}
