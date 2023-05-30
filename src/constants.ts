@@ -76,4 +76,5 @@ export const paymentData = {
 		title: 'Telegram',
 		isRecurrent: true,
 		isCrypto: false
+	}
 };
