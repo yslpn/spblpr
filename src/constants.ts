@@ -70,5 +70,11 @@ export const paymentData = {
 		title: 'Boosty',
 		isRecurrent: true,
 		isCrypto: false
+	},
+	telegram: {
+		details: 'https://t.me/donate?start=Y2hhcml0eV9pbnZvaWNlX3JlcXVlc3QtMzExNzA=-g7vK',
+		title: 'Telegram',
+		isRecurrent: true,
+		isCrypto: false
 	}
 };
