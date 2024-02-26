@@ -3,7 +3,7 @@
 	import Meta from '$lib/meta.svelte';
 
 	import lprLogo from '../assets/lpr-logo.svg?raw';
-	import Text from '../textData';
+	import Text from '../../textData';
 
 	const lpRussiaJoin = 'https://lp-russia.org';
 </script>
