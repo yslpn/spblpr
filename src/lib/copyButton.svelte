@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Text from '../text';
+	import Text from '../textData';
 
 	import copySVG from '../assets/icons/copy.svg?raw';
 

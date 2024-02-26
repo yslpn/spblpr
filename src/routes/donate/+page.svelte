@@ -1,7 +1,7 @@
 <script>
 	import Link from '$lib/link.svelte';
 	import donateLogo from '../../assets/donate-logo.svg?raw';
-	import Text from '../../text';
+	import Text from '../../textData';
 </script>
 
 <h1>{Text['DonatePage.Title']}</h1>

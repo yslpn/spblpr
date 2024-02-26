@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Link from '$lib/link.svelte';
 	import { paymentData } from '../../../paymentData';
-	import Text from '../../../text';
+	import Text from '../../../textData';
 
 	const onceList = (Object.keys(paymentData) as Array<keyof typeof paymentData>).filter(
 		(paymentItem) => !paymentData[paymentItem].isRecurrent && !paymentData[paymentItem].isCrypto

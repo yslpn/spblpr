@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
 
-	import Text from '../text';
+	import Text from '../textData';
 	import { paymentData } from '../paymentData';
 	import { getCryptoList } from '../helpers/main';
 

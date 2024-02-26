@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Link from '$lib/link.svelte';
 	import { paymentData } from '../../../paymentData';
-	import Text from '../../../text';
+	import Text from '../../../textData';
 	import { getRecurrentList } from '../../../helpers/main';
 
 	const recurrentList = getRecurrentList(paymentData);
