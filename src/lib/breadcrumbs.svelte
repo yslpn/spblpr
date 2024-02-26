@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
 
-	import Text from '../text.json';
+	import Text from '../text';
 	import { paymentData } from '../paymentData';
 	import { getCryptoList } from '../helpers/main';
 
@@ -45,15 +45,13 @@
 	</nav>
 {/if}
 
-<style lang="scss">
-	@use '../variables.scss';
-
+<style>
 	a {
-		color: variables.$text;
+		color: var(--text);
 		transition: 0.3s all;
 
 		&:hover {
-			color: variables.$gold;
+			color: var(--gold);
 		}
 	}
 

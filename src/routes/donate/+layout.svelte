@@ -1,7 +1,7 @@
 <script>
 	import Meta from '$lib/meta.svelte';
 
-	import Text from '../../text.json';
+	import Text from '../../text';
 </script>
 
 <Meta

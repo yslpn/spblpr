@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Text from '../text.json';
+	import Text from '../text';
 
 	import copySVG from '../assets/icons/copy.svg?raw';
 
@@ -31,9 +31,7 @@
 	{/if}
 </button>
 
-<style lang="scss">
-	@use '../variables.scss';
-
+<style>
 	button {
 		display: inline-flex;
 		gap: 14px;
@@ -42,13 +40,13 @@
 		min-width: 42px;
 		height: 42px;
 		cursor: pointer;
-		background-color: variables.$gold;
+		background-color: var(--gold);
 		border: none;
 		transition: 0.3s all;
 
 		&:hover {
-			color: variables.$gold;
-			background-color: variables.$black;
+			color: var(--gold);
+			background-color: var(--black);
 		}
 	}
 </style>

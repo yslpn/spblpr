@@ -9,30 +9,28 @@
 	<slot />
 </a>
 
-<style lang="scss">
-	@use '../variables.scss';
-
+<style>
 	a {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: 252px;
 		height: 42px;
-		color: variables.$black;
+		color: var(--black);
 		text-decoration: none;
-		background-color: variables.$gold;
+		background-color: var(--gold);
 		transition: 0.3s all;
 
 		&:hover {
-			color: variables.$gold;
-			background-color: variables.$black;
+			color: var(--gold);
+			background-color: var(--black);
 		}
 
 		@media (hover: none) {
-			/* Стили для устройств без ховера */
+			/* Styles for devices without hover */
 			&:hover {
-				color: variables.$black;
-				background-color: variables.$gold;
+				color: var(--black);
+				background-color: var(--gold);
 			}
 		}
 	}

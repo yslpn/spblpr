@@ -13,34 +13,42 @@
 	</div>
 </div>
 
-<style lang="scss">
-	@use '../variables.scss';
+<style>
+	:root {
+		--black: #1a1919;
+		--gold: #c5a664;
+		--text: #aaa;
+	}
 
-	:global {
-		html {
-			box-sizing: border-box;
-			font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans',
-				'Liberation Sans', Arial, sans-serif;
-		}
+	:global(html) {
+		box-sizing: border-box;
+		font-family:
+			system-ui,
+			-apple-system,
+			'Segoe UI',
+			Roboto,
+			'Helvetica Neue',
+			'Noto Sans',
+			'Liberation Sans',
+			Arial,
+			sans-serif;
+	}
 
-		*,
-		*::before,
-		*::after {
-			box-sizing: inherit;
-		}
+	:global(*, *::before, *::after) {
+		box-sizing: inherit;
+	}
 
-		body {
-			margin-top: 0;
-			margin-bottom: 0;
-			color: variables.$text;
-			background-color: variables.$black;
-		}
+	:global(body) {
+		margin-top: 0;
+		margin-bottom: 0;
+		color: var(--text);
+		background-color: var(--black);
+	}
 
-		ul {
-			padding: 0;
-			margin: 0;
-			list-style: none;
-		}
+	:global(ul) {
+		padding: 0;
+		margin: 0;
+		list-style: none;
 	}
 
 	.grid-container {
@@ -56,9 +64,7 @@
 		flex-direction: column;
 		grid-row: 1;
 		align-items: center;
-		align-self: center;
 		justify-content: center;
-		justify-self: center;
 		padding: 20px;
 	}
 
@@ -68,7 +74,6 @@
 		grid-row: 2;
 		gap: 28px;
 		align-items: center;
-		align-self: end;
 		justify-self: center;
 		padding: 20px;
 	}

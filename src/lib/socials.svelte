@@ -1,5 +1,5 @@
 <script>
-	import Text from '../text.json';
+	import Text from '../text';
 
 	import telegram from '../assets/icons/telegram.svg?raw';
 	import twitter from '../assets/icons/twitter.svg?raw';
@@ -42,7 +42,7 @@
 	</li>
 </ul>
 
-<style lang="scss">
+<style>
 	ul {
 		display: flex;
 		align-items: center;
