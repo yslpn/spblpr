@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 import QRCode from 'qrcode';
-import { paymentData } from '../../../constants';
+import { paymentData } from '../../../paymentData';
 
 import Text from '../../../text.json';
 

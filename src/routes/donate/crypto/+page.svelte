@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Link from '$lib/link.svelte';
-	import { paymentData } from '../../../constants';
+	import { paymentData } from '../../../paymentData';
 	import Text from '../../../text.json';
 	import { getCryptoList } from '../../../helpers/main';
 

@@ -3,7 +3,7 @@
 	import { base } from '$app/paths';
 
 	import Text from '../text.json';
-	import { paymentData } from '../constants';
+	import { paymentData } from '../paymentData';
 	import { getCryptoList } from '../helpers/main';
 
 	$: currentPage = $page.url.href;
