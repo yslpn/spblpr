@@ -71,14 +71,14 @@ export const paymentData = {
 		isRecurrent: true,
 		isCrypto: false
 	},
-	boosty: {
-		details: 'https://boosty.to/spblpr',
-		title: 'Boosty',
-		isRecurrent: true,
-		isCrypto: false
-	},
+	// boosty: {
+	// 	details: 'https://boosty.to/spblpr',
+	// 	title: 'Boosty',
+	// 	isRecurrent: true,
+	// 	isCrypto: false
+	// },
 	telegram: {
-		details: 'https://t.me/donate?start=Y2hhcml0eV9pbnZvaWNlX3JlcXVlc3QtMzExNzA=-g7vK',
+		details: 'https://t.me/donate_lprspb/20',
 		title: 'Telegram',
 		isRecurrent: true,
 		isCrypto: false
