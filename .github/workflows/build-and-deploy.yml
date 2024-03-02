@@ -15,14 +15,14 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build site
         env:
-          BASE_PATH: '/spblpr/'
+          BASE_PATH: '/spblpr'
           ORIGIN_PATH: 'https://yslpn.github.io'
         run: npm run build
 
