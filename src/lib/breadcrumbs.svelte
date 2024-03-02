@@ -1,19 +1,18 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { base } from '$app/paths';
 
 	import Text from '../textData';
 	import { paymentData } from '../paymentData';
 	import { getCryptoList } from '../helpers/main';
 
-	$: currentPage = $page.url.href;
+	$: currentPage = $page.route.id;
 	$: slug = $page.params.slug;
 
-	const mainPage = `${$page.url.origin}${base}/`;
-	const donatePage = `${$page.url.origin}${base}/donate`;
-	const oncePage = `${$page.url.origin}${base}/donate/once`;
-	const longPage = `${$page.url.origin}${base}/donate/long`;
-	const cryptoPage = `${$page.url.origin}${base}/donate/crypto`;
+	const mainPage = '/';
+	const donatePage = '/donate';
+	const oncePage = '/donate/once';
+	const longPage = '/donate/long';
+	const cryptoPage = '/donate/crypto';
 
 	const isCryptoPageItem = (): boolean => {
 		const cryptoList = getCryptoList(paymentData);
