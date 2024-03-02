@@ -28,17 +28,17 @@
 
 {#if currentPage !== mainPage}
 	<nav>
-		<a href={`${base}/${mainPage}`}>{Text['Breadcrumbs.Main']}</a>
+		<a href={`${base}${mainPage}`}>{Text['Breadcrumbs.Main']}</a>
 
 		{#if currentPage !== donatePage}
 			/
-			<a href={`${base}/${donatePage}`}>{Text['Breadcrumbs.Donate']}</a>
+			<a href={`${base}${donatePage}`}>{Text['Breadcrumbs.Donate']}</a>
 			{#if currentPage !== oncePage && currentPage !== longPage}
 				/
-				<a href={`${base}/${oncePage}`}>{Text['Breadcrumbs.DonateOnce']}</a>
+				<a href={`${base}${oncePage}`}>{Text['Breadcrumbs.DonateOnce']}</a>
 				{#if currentPage !== cryptoPage && isCryptoPageItem()}
 					/
-					<a href={`${base}/${cryptoPage}`}>{Text['Breadcrumbs.DonateCrypto']}</a>
+					<a href={`${base}${cryptoPage}`}>{Text['Breadcrumbs.DonateCrypto']}</a>
 				{/if}
 			{/if}
 		{/if}
