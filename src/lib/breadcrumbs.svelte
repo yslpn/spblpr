@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 
 	import Text from '../textData';
 	import { paymentData } from '../paymentData';
@@ -27,17 +28,17 @@
 
 {#if currentPage !== mainPage}
 	<nav>
-		<a href={mainPage}>{Text['Breadcrumbs.Main']}</a>
+		<a href={`${base}/${mainPage}`}>{Text['Breadcrumbs.Main']}</a>
 
 		{#if currentPage !== donatePage}
 			/
-			<a href={donatePage}>{Text['Breadcrumbs.Donate']}</a>
+			<a href={`${base}/${donatePage}`}>{Text['Breadcrumbs.Donate']}</a>
 			{#if currentPage !== oncePage && currentPage !== longPage}
 				/
-				<a href={oncePage}>{Text['Breadcrumbs.DonateOnce']}</a>
+				<a href={`${base}/${oncePage}`}>{Text['Breadcrumbs.DonateOnce']}</a>
 				{#if currentPage !== cryptoPage && isCryptoPageItem()}
 					/
-					<a href={cryptoPage}>{Text['Breadcrumbs.DonateCrypto']}</a>
+					<a href={`${base}/${cryptoPage}`}>{Text['Breadcrumbs.DonateCrypto']}</a>
 				{/if}
 			{/if}
 		{/if}
