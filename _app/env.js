@@ -1,1 +1,1 @@
-export const env={}
+export const env={"PUBLIC_ORIGIN_PATH":"https://yslpn.github.io","PUBLIC_BASE_PATH":"/spblpr"}
