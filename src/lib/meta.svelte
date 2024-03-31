@@ -1,14 +1,14 @@
 <script>
 	import { page } from '$app/stores';
-	import { base } from '$app/paths';
+	import { PUBLIC_ORIGIN_PATH, PUBLIC_BASE_PATH } from '$env/static/public';
 
 	export let title = '';
 	export let description = '';
 	export let previewImage = '';
 
-	$: currentHref = $page.url.href;
+	$: currentHref = `${PUBLIC_ORIGIN_PATH}${PUBLIC_BASE_PATH}${$page.url.pathname}`;
 
-	const preview = `${$page.url.origin}${base}/${previewImage}`;
+	const preview = `${PUBLIC_ORIGIN_PATH}${PUBLIC_BASE_PATH}/${previewImage}`;
 </script>
 
 <svelte:head>

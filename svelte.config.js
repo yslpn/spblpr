@@ -18,10 +18,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: process.env.BASE_PATH
-		},
-		prerender: {
-			origin: process.env.ORIGIN_PATH
+			relative: false
 		}
 	}
 };

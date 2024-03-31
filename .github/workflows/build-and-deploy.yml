@@ -22,8 +22,8 @@ jobs:
 
       - name: Build site
         env:
-          BASE_PATH: '/spblpr'
-          ORIGIN_PATH: 'https://yslpn.github.io'
+          PUBLIC_BASE_PATH: '/spblpr'
+          PUBLIC_ORIGIN_PATH: 'https://yslpn.github.io'
         run: npm run build
 
       - name: Deploy to GitHub Pages
