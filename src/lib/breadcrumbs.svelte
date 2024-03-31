@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { PUBLIC_BASE_PATH } from '$env/static/public';
+	import { base } from '$app/paths';
 
 	import Text from '../textData';
 	import { paymentData } from '../paymentData';
@@ -28,17 +28,17 @@
 
 {#if currentPage !== mainPage}
 	<nav>
-		<a href={`${PUBLIC_BASE_PATH}${mainPage}`}>{Text['Breadcrumbs.Main']}</a>
+		<a href={`${base}${mainPage}`}>{Text['Breadcrumbs.Main']}</a>
 
 		{#if currentPage !== donatePage}
 			/
-			<a href={`${PUBLIC_BASE_PATH}${donatePage}`}>{Text['Breadcrumbs.Donate']}</a>
+			<a href={`${base}${donatePage}`}>{Text['Breadcrumbs.Donate']}</a>
 			{#if currentPage !== oncePage && currentPage !== longPage}
 				/
-				<a href={`${PUBLIC_BASE_PATH}${oncePage}`}>{Text['Breadcrumbs.DonateOnce']}</a>
+				<a href={`${base}${oncePage}`}>{Text['Breadcrumbs.DonateOnce']}</a>
 				{#if currentPage !== cryptoPage && isCryptoPageItem()}
 					/
-					<a href={`${PUBLIC_BASE_PATH}${cryptoPage}`}>{Text['Breadcrumbs.DonateCrypto']}</a>
+					<a href={`${base}${cryptoPage}`}>{Text['Breadcrumbs.DonateCrypto']}</a>
 				{/if}
 			{/if}
 		{/if}
