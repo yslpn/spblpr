@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Link from '$lib/link.svelte';
 	import { paymentData } from '../../../paymentData';
-	import Text from '../../../textData';
 	import { getRecurrentList } from '../../../helpers/main';
 
 	const recurrentList = getRecurrentList(paymentData);
@@ -13,7 +12,7 @@
 	{/each}
 </svelte:head>
 
-<h1>{Text['Long']}</h1>
+<h1>Регулярное пожертвование</h1>
 
 <ul>
 	{#each recurrentList as recurrentItem}

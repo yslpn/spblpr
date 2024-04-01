@@ -2,8 +2,6 @@ import { error } from '@sveltejs/kit';
 import QRCode from 'qrcode';
 import { paymentData } from '../../../paymentData';
 
-import Text from '../../../textData';
-
 export async function load({ params }: { params: { slug: keyof typeof paymentData } }) {
 	const isValidSlug = Object.keys(paymentData).includes(params.slug);
 
@@ -16,5 +14,5 @@ export async function load({ params }: { params: { slug: keyof typeof paymentDat
 		return { ...data, qr };
 	}
 
-	throw error(404, Text['Error.NotFound']);
+	throw error(404, 'Страница не найдена');
 }

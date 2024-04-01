@@ -1,6 +1,4 @@
 <script>
-	import Text from '../textData';
-
 	import telegram from '../assets/icons/telegram.svg?raw';
 	import twitter from '../assets/icons/twitter.svg?raw';
 	import vk from '../assets/icons/vk.svg?raw';
@@ -11,32 +9,32 @@
 
 <ul>
 	<li>
-		<a href="https://t.me/spblpr" target="_blank" aria-label={Text['Socials.Telegram']}>
+		<a href="https://t.me/spblpr" target="_blank" aria-label="Telegram ЛПР Петербург">
 			{@html telegram}
 		</a>
 	</li>
 	<li>
-		<a href="https://twitter.com/spblpr" target="_blank" aria-label={Text['Socials.Twitter']}>
+		<a href="https://twitter.com/spblpr" target="_blank" aria-label="Twitter ЛПР Петербург">
 			{@html twitter}
 		</a>
 	</li>
 	<li>
-		<a href="https://vk.com/spblpr" target="_blank" aria-label={Text['Socials.VK']}>
+		<a href="https://vk.com/spblpr" target="_blank" aria-label="VK ЛПР Петербург">
 			{@html vk}
 		</a>
 	</li>
 	<!-- <li>
-		<a href="https://instagram.com/spblpr" target="_blank" aria-label={Text['Socials.Instagram']}>
+		<a href="https://instagram.com/spblpr" target="_blank" aria-label='Instagram ЛПР Петербург'>
 			{@html instagram}
 		</a>
 	</li>
 	<li>
-		<a href="https://facebook.com/spblpr" target="_blank" aria-label={Text['Socials.Facebook']}>
+		<a href="https://facebook.com/spblpr" target="_blank" aria-label='Facebook ЛПР Петербург'>
 			{@html facebook}
 		</a>
 	</li> -->
 	<li>
-		<a href="https://youtube.com/spblpr" target="_blank" aria-label={Text['Socials.YouTube']}>
+		<a href="https://youtube.com/spblpr" target="_blank" aria-label="YouTube ЛПР Петербург">
 			{@html youtube}
 		</a>
 	</li>

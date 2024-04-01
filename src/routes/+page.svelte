@@ -3,32 +3,32 @@
 	import Meta from '$lib/meta.svelte';
 
 	import lprLogo from '../assets/lpr-logo.svg?raw';
-	import Text from '../textData';
 
 	const lpRussiaJoin = 'https://lp-russia.org';
 </script>
 
 <Meta
-	title={Text['MainPage.Title']}
-	description={Text['MainPage.Description']}
+	title="ЛПР Петербург"
+	description="Отделение Либертарианской партии России в северной столице. Вступайте, если разделяете наши ценности!"
 	previewImage={'og-main.png'}
 >
 	<link rel="preconnect" href={lpRussiaJoin} />
 </Meta>
 
-<h1>{Text['MainPage.Title']}</h1>
+<h1>Вступить</h1>
 <p>{@html lprLogo}</p>
-<p>{Text['MainPage.Description']}</p>
+<p>
+	Отделение Либертарианской партии России в северной столице. Вступайте, если разделяете наши
+	ценности!
+</p>
 
 <nav>
-	<Link href={`${lpRussiaJoin}/join`} target="_blank">
-		{Text['MainPage.Join']}
-	</Link>
-	<Link href="./donate">{Text['MainPage.Donate']}</Link>
+	<Link href={`${lpRussiaJoin}/join`} target="_blank">Вступить</Link>
+	<Link href="./donate">Помочь деньгами</Link>
 
-	<a href={`${lpRussiaJoin}/platform`}>{Text['MainPage.Platform']}</a>
-	<a href={`${lpRussiaJoin}/docs/Программа.pdf`}>{Text['MainPage.Program']}</a>
-	<a href={`${lpRussiaJoin}/docs/Устав.pdf`}>{Text['MainPage.Charter']}</a>
+	<a href={`${lpRussiaJoin}/platform`}>Платформа</a>
+	<a href={`${lpRussiaJoin}/docs/Программа.pdf`}>Программа</a>
+	<a href={`${lpRussiaJoin}/docs/Устав.pdf`}>Устав</a>
 </nav>
 
 <style>

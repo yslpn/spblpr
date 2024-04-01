@@ -1,16 +1,15 @@
 <script>
 	import Link from '$lib/link.svelte';
 	import donateLogo from '../../assets/donate-logo.svg?raw';
-	import Text from '../../textData';
 </script>
 
-<h1>{Text['DonatePage.Title']}</h1>
+<h1>Поддержите свободу в Санкт-Петербурге!</h1>
 <p>{@html donateLogo}</p>
-<p>{Text['DonatePage.Description']}</p>
+<p>Пополните казну регионального отделения Либертарианской партии России.</p>
 
 <nav>
-	<Link href="./donate/once">{Text['Once']}</Link>
-	<Link href="./donate/long">{Text['Long']}</Link>
+	<Link href="./donate/once">Разовое пожертвование</Link>
+	<Link href="./donate/long">Регулярное пожертвование</Link>
 </nav>
 
 <style>

@@ -1,14 +1,13 @@
 <script lang="ts">
 	import Link from '$lib/link.svelte';
 	import { paymentData } from '../../../paymentData';
-	import Text from '../../../textData';
 
 	const onceList = (Object.keys(paymentData) as Array<keyof typeof paymentData>).filter(
 		(paymentItem) => !paymentData[paymentItem].isRecurrent && !paymentData[paymentItem].isCrypto
 	);
 </script>
 
-<h1>{Text['Once']}</h1>
+<h1>Разовое пожертвование</h1>
 
 <ul>
 	{#each onceList as onceItem}
@@ -18,7 +17,7 @@
 	{/each}
 
 	<li>
-		<Link href="./crypto">{Text['Crypto']}</Link>
+		<Link href="./crypto">Криптовалюты</Link>
 	</li>
 </ul>
 

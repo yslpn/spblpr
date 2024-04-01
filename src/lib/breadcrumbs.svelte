@@ -2,7 +2,6 @@
 	import { page } from '$app/stores';
 	import { base } from '$app/paths';
 
-	import Text from '../textData';
 	import { paymentData } from '../paymentData';
 	import { getCryptoList } from '../helpers/main';
 
@@ -28,17 +27,17 @@
 
 {#if currentPage !== mainPage}
 	<nav>
-		<a href={`${base}${mainPage}`}>{Text['Breadcrumbs.Main']}</a>
+		<a href={`${base}${mainPage}`}>Главная</a>
 
 		{#if currentPage !== donatePage}
 			/
-			<a href={`${base}${donatePage}`}>{Text['Breadcrumbs.Donate']}</a>
+			<a href={`${base}${donatePage}`}>Пожертвовать</a>
 			{#if currentPage !== oncePage && currentPage !== longPage}
 				/
-				<a href={`${base}${oncePage}`}>{Text['Breadcrumbs.DonateOnce']}</a>
+				<a href={`${base}${oncePage}`}>Разовое пожертвование</a>
 				{#if currentPage !== cryptoPage && isCryptoPageItem()}
 					/
-					<a href={`${base}${cryptoPage}`}>{Text['Breadcrumbs.DonateCrypto']}</a>
+					<a href={`${base}${cryptoPage}`}>Криптовалюты</a>
 				{/if}
 			{/if}
 		{/if}

@@ -1,12 +1,10 @@
 <script>
 	import Meta from '$lib/meta.svelte';
-
-	import Text from '../../textData';
 </script>
 
 <Meta
-	title={Text['DonatePage.Title']}
-	description={Text['DonatePage.Description']}
+	title="Поддержите свободу в Санкт-Петербурге!"
+	description="Пополните казну регионального отделения Либертарианской партии России."
 	previewImage={'og-donate.png'}
 />
 <slot />

@@ -1,6 +1,4 @@
 <script lang="ts">
-	import Text from '../textData';
-
 	import copySVG from '../assets/icons/copy.svg?raw';
 
 	export let text: string;
@@ -24,10 +22,10 @@
 	}
 </script>
 
-<button on:click={copyToClipboard} aria-label={Text['Copy']}>
+<button on:click={copyToClipboard} aria-label="Скопировать">
 	{@html copySVG}
 	{#if success}
-		<span>{Text['Copy.Success']}</span>
+		<span>Скопировано!</span>
 	{/if}
 </button>
 
