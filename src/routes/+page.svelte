@@ -25,7 +25,7 @@
 <nav>
 	<Link href={`${lpRussiaJoin}/join`} target="_blank">Вступить</Link>
 	<Link href="./donate">Помочь деньгами</Link>
-	<Link href="./blog">Публикации</Link>
+	<!-- <Link href="./blog">Публикации</Link> -->
 
 	<a href={`${lpRussiaJoin}/platform`}>Платформа</a>
 	<a href={`${lpRussiaJoin}/docs/Программа.pdf`}>Программа</a>
