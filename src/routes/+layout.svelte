@@ -65,7 +65,13 @@
 		grid-row: 1;
 		align-items: center;
 		justify-content: center;
-		padding: 20px;
+		width: 100%;
+		padding: 0 24px;
+		margin: 0 auto;
+
+		@media (width >= 1024px) {
+			max-width: 1050px;
+		}
 	}
 
 	.footer {
