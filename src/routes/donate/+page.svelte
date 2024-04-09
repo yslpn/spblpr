@@ -1,6 +1,6 @@
 <script>
 	import Link from '$lib/link.svelte';
-	import donateLogo from '../../assets/donate-logo.svg?raw';
+	import donateLogo from '../../assets/icons/donate-logo.svg?raw';
 </script>
 
 <h1>Поддержите свободу в Санкт-Петербурге!</h1>

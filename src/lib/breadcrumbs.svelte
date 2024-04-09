@@ -9,6 +9,7 @@
 	$: slug = $page.params.slug;
 
 	const mainPage = '/';
+	const blogPage = '/blog';
 	const donatePage = '/donate';
 	const oncePage = '/donate/once';
 	const longPage = '/donate/long';
@@ -25,7 +26,17 @@
 	};
 </script>
 
-{#if currentPage !== mainPage}
+{#if currentPage?.includes(blogPage)}
+	<nav>
+		<a href={`${base}${mainPage}`}>Главная</a>
+		{#if currentPage !== blogPage}
+			/
+			<a href={`${base}${blogPage}`}>Публикации</a>
+		{/if}
+	</nav>
+{/if}
+
+{#if currentPage?.includes(donatePage)}
 	<nav>
 		<a href={`${base}${mainPage}`}>Главная</a>
 

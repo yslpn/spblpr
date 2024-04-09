@@ -2,7 +2,7 @@
 	import Link from '$lib/link.svelte';
 	import Meta from '$lib/meta.svelte';
 
-	import lprLogo from '../assets/lpr-logo.svg?raw';
+	import lprLogo from '../assets/icons/lpr-logo.svg?raw';
 
 	const lpRussiaJoin = 'https://lp-russia.org';
 </script>
@@ -15,7 +15,7 @@
 	<link rel="preconnect" href={lpRussiaJoin} />
 </Meta>
 
-<h1>Вступить</h1>
+<h1>ЛПР СПб</h1>
 <p>{@html lprLogo}</p>
 <p>
 	Отделение Либертарианской партии России в северной столице. Вступайте, если разделяете наши
@@ -25,6 +25,7 @@
 <nav>
 	<Link href={`${lpRussiaJoin}/join`} target="_blank">Вступить</Link>
 	<Link href="./donate">Помочь деньгами</Link>
+	<Link href="./blog">Публикации</Link>
 
 	<a href={`${lpRussiaJoin}/platform`}>Платформа</a>
 	<a href={`${lpRussiaJoin}/docs/Программа.pdf`}>Программа</a>
