@@ -4,7 +4,7 @@
 
 	export let title = '';
 	export let description = '';
-	export let previewImage = '/og-main.png';
+	export let previewImage = '/images/og-main.png';
 
 	$: currentURL = new URL(`${$page.url.origin}${$page.url.pathname}`);
 
