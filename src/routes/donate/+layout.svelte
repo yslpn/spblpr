@@ -5,6 +5,6 @@
 <Meta
 	title="Поддержите свободу в Санкт-Петербурге!"
 	description="Пополните казну регионального отделения Либертарианской партии России."
-	previewImage={'og-donate.png'}
+	previewImage={'/og-donate.png'}
 />
 <slot />

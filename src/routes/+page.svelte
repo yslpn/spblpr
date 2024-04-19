@@ -10,7 +10,7 @@
 <Meta
 	title="ЛПР Петербург"
 	description="Отделение Либертарианской партии России в северной столице. Вступайте, если разделяете наши ценности!"
-	previewImage={'og-main.png'}
+	previewImage={'/og-main.png'}
 >
 	<link rel="preconnect" href={lpRussiaJoin} />
 </Meta>

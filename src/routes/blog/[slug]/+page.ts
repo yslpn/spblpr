@@ -11,12 +11,13 @@ export async function load({ params }: { params: { slug: string } }) {
 		});
 	}
 
-	const { title, date } = post.metadata;
+	const { title, date, thumbnail } = post.metadata;
 	const content = post.default;
 
 	return {
 		content,
 		title,
-		date
+		date,
+		thumbnail
 	};
 }

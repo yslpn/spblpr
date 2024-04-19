@@ -1,6 +1,10 @@
 <script lang="ts">
+	import Meta from '$lib/meta.svelte';
+
 	export let data;
 </script>
+
+<Meta title="ЛПР Петербург" description={data.title} previewImage={data.thumbnail} />
 
 <article>
 	<h1>{data.title}</h1>
